@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Мирроника</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+    background: #050816;
+}
+
+.section {
+    position: relative;
+    padding: 120px 20px;
+    overflow: hidden;
+}
+
+/* 🌈 МНОГОЦВЕТНЫЙ ФОН */
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(120deg,
+            rgba(255,0,120,0.25),
+            rgba(0,200,255,0.25),
+            rgba(0,255,150,0.18),
+            rgba(255,200,0,0.18)
+        );
+    opacity: 0.35;
+}
+
+/* ГЕОМЕТРИЯ */
+.section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 25%, rgba(255,255,255,0.25) 0 22px, transparent 24px),
+        radial-gradient(circle at 70% 40%, rgba(255,255,255,0.2) 0 28px, transparent 30px),
+        radial-gradient(circle at 40% 80%, rgba(255,255,255,0.15) 0 16px, transparent 18px);
+    opacity: 0.25;
+}
+
+/* 📺 ТВ */
+.tv {
+    position: absolute;
+    width: 220px;
+    height: 130px;
+    border: 4px solid rgba(255,255,255,0.6);
+    border-radius: 12px;
+    background: rgba(0,0,0,0.25);
+    opacity: 0.75;
+}
+
+.tv::after {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 8px;
+}
+
+.tv::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 5px;
+}
+
+.tv1 { top: 5%; left: 5%; transform: rotate(-8deg); }
+.tv2 { top: 18%; right: 6%; transform: rotate(6deg); }
+.tv3 { bottom: 10%; left: 12%; transform: rotate(10deg); }
+.tv4 { bottom: 25%; right: 18%; transform: rotate(-12deg); }
+
+.section > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* TEXT */
+h1 {
+    font-size: 74px;
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 1200px;
+    margin: 14px auto;
+    font-size: 20px;
+    line-height: 2.1;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* BLOCKS */
+.review {
+    max-width: 900px;
+    margin: 12px auto;
+    padding: 18px;
+    border-left: 4px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- 📺 ТВ -->
+<div class="tv tv1"></div>
+<div class="tv tv2"></div>
+<div class="tv tv3"></div>
+<div class="tv tv4"></div>
+
+<!-- HERO -->
+<div class="section">
+    <h1>Мирроника</h1>
+
+    <p>
+        Мирроника — это интеллектуальная визуальная система нового поколения,
+        разработанная для интеграции цифровых технологий в современную архитектуру и интерьерные пространства.
+    </p>
+
+    <p>
+        Она объединяет функции дисплея, дизайнерского объекта и технологического модуля,
+        создавая единый визуальный интерфейс среды.
+    </p>
+
+    <p>
+        Главная концепция — убрать визуальный шум техники и оставить только чистую архитектуру пространства.
+    </p>
+
+    <p>
+        Это решение используется в жилых, коммерческих и премиальных проектах по всему миру.
+    </p>
+</div>
+
+<!-- TECHNOLOGY -->
+<div class="section">
+    <h2>Технология</h2>
+
+    <p>
+        В основе Мирроника лежит высококонтрастная визуальная система,
+        обеспечивающая глубокую цветопередачу и высокую детализацию изображения.
+    </p>
+
+    <p>
+        Специальная конструкция корпуса позволяет скрывать технические элементы
+        в выключенном состоянии, превращая устройство в элемент интерьера.
+    </p>
+
+    <p>
+        Поддерживается работа в условиях яркого освещения, а также в затемнённых пространствах,
+        сохраняя стабильное качество изображения.
+    </p>
+
+    <p>
+        Используются современные алгоритмы обработки изображения для повышения чёткости и контрастности.
+    </p>
+</div>
+
+<!-- APPLICATION -->
+<div class="section">
+    <h2>Где используется</h2>
+
+    <p>
+        Мирроника применяется в частных домах, апартаментах, отелях премиум-класса,
+        ресторанах, офисах и дизайнерских студиях.
+    </p>
+
+    <p>
+        Также используется в шоурумах, выставочных пространствах и цифровых витринах,
+        где важна визуальная презентация.
+    </p>
+
+    <p>
+        Архитекторы интегрируют систему в проекты как часть интерьерной композиции.
+    </p>
+
+    <p>
+        Подходит для домашних кинотеатров, презентационных залов и коммерческих пространств.
+    </p>
+</div>
+
+<!-- BENEFITS -->
+<div class="section">
+    <h2>Преимущества</h2>
+
+    <p>• Минималистичный дизайн без визуального шума</p>
+    <p>• Полная интеграция в интерьер</p>
+    <p>• Высокое качество изображения</p>
+    <p>• Универсальность применения</p>
+    <p>• Совместимость с современными мультимедиа системами</p>
+    <p>• Поддержка премиальных интерьерных решений</p>
+</div>
+
+<!-- REVIEWS -->
+<div class="section">
+    <h2>Отзывы</h2>
+
+    <div class="review">«Выключенный — это зеркало, включенный — кинотеатр.»</div>
+    <div class="review">«Очень стильное и современное решение.»</div>
+    <div class="review">«Идеально вписывается в интерьер.»</div>
+    <div class="review">«Используем в отеле — гости постоянно интересуются.»</div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+    <h2>О Мирроника</h2>
+
+    <p>
+        Мирроника — это не просто устройство отображения, а концепция цифровой архитектуры пространства.
+    </p>
+
+    <p>
+        Она формирует новый стандарт взаимодействия человека с технологической средой.
+    </p>
+
+    <p>
+        Устройство становится частью интерьера, сохраняя функциональность и визуальную чистоту.
+    </p>
+
+    <p>
+        Это решение ориентировано на будущее дизайна и премиальных пространств.
+    </p>
+</div>
+
+<!-- FOOTER -->
+<div class="section">
+    <h2>Контакты</h2>
+
+    <p>Телефон: 89152983514</p>
+    <p>Email: mirronika@bk.ru</p>
+
+    <p style="opacity:0.6;">МИРРОНИКА © 2026</p>
+</div>
+
+</body>
+</html>
